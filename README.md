@@ -1,4 +1,4 @@
-# uca2016
+# uca201
 1. Install Node
 
 	a. $sudo apt-get install nodejs
@@ -17,4 +17,4 @@
 
 6. If everything goes fine - start implementing your project now. 
 
-7. Refer to requirement.txt for project requirement. Be constructive, add some eye catching features if your want to. best of luck !! 
+7. Refer to requirement.txt for project requirement. Be constructive, add some eye catching features if your want to. best of luck !! good
