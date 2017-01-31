@@ -1,1 +1,192 @@
-#my css
+.header_top {
+    background: rgb(100, 123, 180);
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header_user {
+    float: left;
+    padding-top: 19px;
+}
+
+@media (max-width: 1199px)
+<style>…</style>
+.header_user li {
+    margin-right: 6px;
+}
+<style>…</style>
+.header_user li {
+    position: relative;
+    display: inline-block;
+    margin-right: 33px;
+    padding: 3px 0px 0px;
+}
+
+@media (max-width: 1199px)
+<style>…</style>
+.header_user li + li {
+    padding-left: 13px;
+}
+<style>…</style>
+.header_user li + li {
+    padding-left: 31px;
+}
+@media (max-width: 1199px)
+<style>…</style>
+.header_user li {
+    margin-right: 6px;
+}
+<style>…</style>
+.header_user li {
+    position: relative;
+    display: inline-block;
+    margin-right: 33px;
+    padding: 3px 0px 0px;
+}
+.header_search {
+    float: right;
+    margin-top: 15px;
+}
+
+.header_search #search-submit i {
+    vertical-align: middle;
+}
+<style>…</style>
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+<style>…</style>
+i, dfn {
+    font-style: italic;
+}
+
+.header_top-right {
+    float: right;
+    padding-top: 22px;
+}
+
+@media (max-width: 1199px)
+<style>…</style>
+.header_cart {
+    padding: 0px 15px;
+}
+<style>…</style>
+.header_cart {
+    display: inline-block;
+    padding: 0px 62px 0px 36px;
+}
+
+.header_cart a i {
+    font-size: 26px;
+    line-height: 22px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding-right: 9px;
+    transition: 0.5s ease-in-out;
+}
+
+.header_cart a span {
+    transition: 0.5s ease-in-out;
+}
+<style>…</style>
+a, span {
+    vertical-align: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+}
+
+.header_cart a span.count {
+    padding: 0px 4px;
+}
+<!-- second website-->
+@media (max-width: 991px)
+#htmlcontent_top {
+    margin-top: 20px;
+    transform-style: inherit !important;
+}
+#htmlcontent_top {
+    margin-bottom: 30px;
+    margin-top: -7px;
+    position: relative;
+}
+
+#htmlcontent_top ul {
+    margin: 0;
+    text-align: center;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+ol, ul {
+    list-style: none;
+}
+
+@media (max-width: 1199px)
+#htmlcontent_top ul li.htmlcontent-item-1 {
+    display: block;
+}
+#htmlcontent_top ul li.htmlcontent-item-1 {
+    display: inline-block;
+}
+
+@media (max-width: 991px)
+#htmlcontent_top ul li .item-html {
+    position: relative;
+    top: 0;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background: #fff;
+    padding: 20px;
+}
+@media (max-width: 991px)
+#htmlcontent_top ul li .item-html {
+    z-index: 1;
+}
+#htmlcontent_top ul li .item-html {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    -moz-transform: translateY(-85%);
+    -ms-transform: translateY(-85%);
+    -o-transform: translateY(-85%);
+    -webkit-transform: translateY(-85%);
+    transform: translateY(-85%);
+    z-index: 10;
+}
+
+#htmlcontent_top ul li.htmlcontent-item-1 img {
+    max-width: 100%;
+    height: auto;
+}
+#htmlcontent_top ul li img {
+}
+@media (max-width: 991px)
+#htmlcontent_top ul li img {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
