@@ -13,3 +13,9 @@ I should be able to see the price
 I shoule be select and order the item
 I should be able to specify which address to ship
 I should be rate the shopkeeper and product
+
+Group members:-
+1. Nikita Srivastava(1410991376)
+2. Nikita Singla(1410991377)
+3. Nirmal Rani(1410991378)
+4. Nitika Gupta(1410991383)
