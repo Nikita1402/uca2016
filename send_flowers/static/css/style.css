@@ -15,11 +15,9 @@
 }
 
 @media (max-width: 1199px)
-<style>…</style>
 .header_user li {
     margin-right: 6px;
 }
-<style>…</style>
 .header_user li {
     position: relative;
     display: inline-block;
@@ -28,26 +26,17 @@
 }
 
 @media (max-width: 1199px)
-<style>…</style>
 .header_user li + li {
     padding-left: 13px;
 }
-<style>…</style>
 .header_user li + li {
     padding-left: 31px;
 }
 @media (max-width: 1199px)
-<style>…</style>
 .header_user li {
     margin-right: 6px;
 }
-<style>…</style>
-.header_user li {
-    position: relative;
-    display: inline-block;
-    margin-right: 33px;
-    padding: 3px 0px 0px;
-}
+
 .header_search {
     float: right;
     margin-top: 15px;
@@ -56,7 +45,6 @@
 .header_search #search-submit i {
     vertical-align: middle;
 }
-<style>…</style>
 .fa {
     display: inline-block;
     font-family: FontAwesome;
@@ -65,7 +53,6 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
-<style>…</style>
 i, dfn {
     font-style: italic;
 }
@@ -76,11 +63,9 @@ i, dfn {
 }
 
 @media (max-width: 1199px)
-<style>…</style>
 .header_cart {
     padding: 0px 15px;
 }
-<style>…</style>
 .header_cart {
     display: inline-block;
     padding: 0px 62px 0px 36px;
@@ -98,7 +83,6 @@ i, dfn {
 .header_cart a span {
     transition: 0.5s ease-in-out;
 }
-<style>…</style>
 a, span {
     vertical-align: inherit;
     line-height: inherit;
