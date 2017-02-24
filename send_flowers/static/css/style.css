@@ -9,13 +9,16 @@
 div {
     display: block;
 }
-.container {
-    padding-right: 15px;
+#page1{
+padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     background-color:lightblue;
     padding: 0;
+}
+.container-fluid {
+    
 }
 .header_user {
     float: left;
@@ -67,6 +70,9 @@ a, span {
     padding: 0px 4px;
 }
 <!-- second website-->
+.item-img{
+width:100%;
+}
 #htmlcontent_top {
     margin-bottom: 30px;
     margin-top: -7px;
