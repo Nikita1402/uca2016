@@ -17,8 +17,7 @@ padding-right: 15px;
     background-color:lightblue;
     padding: 0;
 }
-.container-fluid {
-    
+.container-fluid {  
 }
 .header_user {
     float: left;
@@ -176,7 +175,195 @@ img {
     vertical-align: middle;
     border: 0;
 }
+<!--popular-->
+#index #page .columns-container {
+    padding-top: 0;
+}
 
+#page .columns-container {
+    padding-top: 20px;
+    background: white;
+}
+
+#home-page-tabs {
+    border: none;
+    background: none;
+    padding: 95px 0 0;
+}
+
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+#home-page-tabs > li {
+    margin: 0 20px 0 0;
+    float: none;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.nav > li {
+    position: relative;
+    display: block;
+}
+
+#home-page-tabs > li a {
+    font: 300 38px/1em "Rubik", sans-serif;
+    color: #78909c;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+.tab-content {
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+.tab-content .bx-wrapper {
+    margin: 0 auto !important;
+}
+
+.bx-wrapper {
+    position: relative;
+    padding: 0;
+    zoom: 1;
+    margin: 0 !important;
+}
+
+.tab-content .bx-viewport {
+    overflow: visible !important;
+}
+
+.bx-viewport {
+    direction: ltr !important;
+}
+
+#homepage-carousel {
+    overflow: visible;
+}
+
+#homepage-carousel li {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    clear: none;
+}
+
+ul.product_list.grid > li {
+    padding-bottom: 0;
+    margin-bottom: 0px;
+    text-align: center;
+    position: relative;
+}
+ul.product_list .box-price-btn {
+    display: inline-block;
+}
+
+ul.product_list.grid > li .product-container .content_price {
+    padding-bottom: 9px;
+    line-height: 21px;
+}
+
+ul.product_list .box-price-btn .content_price, ul.product_list .box-price-btn .button-container {
+    float: left;
+}
+
+a.product-name, #manufacturers_list .product-counter a, #suppliers_list .product-counter a {
+    color: rgb(55, 71, 79);
+    font: 300 16px/18px Rubik, sans-serif;
+    margin-bottom: 0px;
+}
+
+ul.product_list.grid > li .product-container h5 a span.list-name {
+    display: none;
+}
+
+.price {
+    color: white;
+    white-space: nowrap;
+    display: inline-block;
+    font: italic 18px/25px Lora, serif;
+    background: rgb(255, 128, 171);
+    padding: 9px 24px;
+    border-radius: 25px;
+}
+
+ul.product_list.grid > li .product-container {
+    background: white;
+    padding: 32px 0 0;
+}
+
+ul.product_list .product-container {
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: 5px solid white;
+    position: relative;
+}
+.product-container .price{
+display: inline-block;
+}
+
+ul.product_list.grid > li .product-container .old-price {
+    margin-right: 5px;
+}
+
+ul.product_list.grid > li .product-container .old-price{
+display: inline-block;
+}
+
+.old-price.product-price {
+    font-size: 13px;
+}
+
+.old-price {
+    color: rgb(120, 144, 156);
+    text-decoration: line-through;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+ul.product_list.grid > li .product-container .price-percent-reduction {
+    display: inline-block;
+}
+
+.price-percent-reduction {
+    color: rgb(233, 30, 99);
+    font: bold 12px/18px Lora, serif;
+}
+
+.sale-box span {
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    min-width: 54px;
+    font: 500 11px/18px Rubik, sans-serif;
+    padding: 7px 6px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.sale-label {
+    background: rgb(250, 80, 93);
+}
+
+span{
+    vertical-align: baseline;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
 <!--third pART-->
 #homepage-blog {
     padding-top: 115px;
