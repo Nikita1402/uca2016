@@ -1,0 +1,83 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=devic-width, initial-scale=1">
+     <title>FLOWER</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <style>
+body {
+    background-image: url("./images/loginbackground.jpg");
+    color:silver;
+}
+</style>
+</head>
+
+<body>
+	<div class="container-fluid">
+	    <div class="row" style="padding:0";>
+	      <div class="col-md-4">	
+	      </div>
+	      <div class="col-md-4" style="size:100";>	
+		    <img class="img-responsive" width="5000000" height="5000000" src="./images/loginimage.jpg">
+	      </div>
+           <ul class="col-md-4 nav nav-pills ">
+          <li class="active"><a data-toggle="pill" href="#signin">Sign In</a></li>
+         <li><a data-toggle="pill" href="#signup">Sign Up</a></li>
+         </ul><br>
+	<div class="tab-content">
+    <div id="signin" class="tab-pane fade in active">
+          <form >
+                <div class="form-group">
+                  </br>
+                  </br>
+                <label  for="email">Email:     </label>
+                 <input type="email" width="100" height="100"  maxlength="10"  id="email" placeholder="Enter email">
+             </div>
+              </br>
+                 <div>
+                 <label for="pwd">Password:</label>
+      <input type="password" id="pwd" placeholder="Enter password"></br></br>
+      <span class="label label-warning">Forget Password</span>
+      </div></br>
+            <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+           </div>
+                  </br>
+           <button type="submit" class="btn btn-default">Submit</button>
+       </form>
+    </div>
+    <div id="signup" class="tab-pane fade ">
+              <form >
+                <div class="form-group">
+                  </br>
+                    </br>
+                <label  for="email">Email:</label>
+                 <input type="email"  width="100" height="100"  maxlength="10"  id="email" placeholder="Enter email">
+             <div></br>
+              <select name="flower" align="right" style="color:red">
+         <option value="buyer">buyer</option>
+         <option value="seller">Seller</option>
+          </select>
+          </div></br>
+                 <div>
+                 <label for="pwd">Password:</label>
+      <input type="password" id="pwd" placeholder="Enter password">
+      </div><br>
+      <div>
+                 <label for="pwd">Confirm Password:</label>
+      <input type="password" id="pwd" placeholder="Confirm password">
+      </div><br>
+            
+           <button type="submit" class="btn btn-default">Submit</button>
+         </div>
+       </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
