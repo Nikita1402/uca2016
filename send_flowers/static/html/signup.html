@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> 
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+    $scope.user = '';
+    $scope.address = '';
+    $scope.phone = '';
+    $scope.email = '';
+    $scope.password = '';
+});
+</script>
+<style>
+h3{
+  color:red;
+  text-align:left;
+}
+</style>
+</head> 
+<body background="./images/loginbackground.jpg" opacity=0.2>
+<h2 style="color:red"><u>SIGN UP</u></h2>
+<div align="center">
+<form ng-app="myApp" ng-controller="validateCtrl" name="myForm" action="/new" method="POST" novalidate>
+<h3>Username:<br>
+<input type="text" name="name" ng-model="user" required>
+<span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+<span ng-show="myForm.user.$error.required">Username is required.</span>
+</span>
+</h3>
+
+<h3>Password:<br>
+        <input type="password" name="pwd" ng-minlength="8" ng-maxlength="20" required ng-model="password">
+        <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+          <span ng-show="myForm.password.$error.required">This field is required</span>
+          <span ng-show="myForm.password.$error.minlength">This field is too short</span>
+          <span ng-show="myForm.password.$error.maxlength">This field is too long</span>
+      </span>
+</h3>
+
+<h3>Email:<br>
+<input type="email" name="email" ng-model="email" required>
+<span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+<span ng-show="myForm.email.$error.required">Email is required.</span>
+<span ng-show="myForm.email.$error.email">Invalid email address.</span>
+</span>
+</h3>
+
+<h3>Address:<br>
+<input type="text" name="address" ng-model="address" required>
+<span style="color:red" ng-show="myForm.address.$dirty && myForm.address.$invalid">
+<span ng-show="myForm.address.$error.required">Address is required.</span>
+</span>
+</h3>
+
+<h3>Contact No:<br>
+<input type="number" ng-minlength="10" ng-maxlength="10" name="contact" ng-model="phone" required>
+<span style="color:red" ng-show="myForm.phone.$dirty && myForm.phone.$invalid">
+<span ng-show="myForm.phone.$error.required">phone number is required.</span>
+<span ng-show="(myForm.phone.$error.minlength || myForm.phone.$error.maxlength) "> phone number should be 10 digits </span>
+</span>
+</h3>
+
+
+
+<h3>
+<input type="submit" ui-sref="signup" ng-click="validateCtlr.selectTab(1)" ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||  myForm.email.$dirty && myForm.email.$invalid">
+</h3>
+</form>
+</div>
+</body>
+</html>
