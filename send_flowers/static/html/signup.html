@@ -17,21 +17,24 @@ h3{
   color:red;
   text-align:left;
 }
+body.background{
+opacity: 0.2;
+}
 </style>
 </head> 
-<body background="./images/loginbackground.jpg" opacity=0.2>
+<body background="./images/loginbackground.jpg">
 <h2 style="color:red"><u>SIGN UP</u></h2>
 <div align="center">
 <form ng-app="myApp" ng-controller="validateCtrl" name="myForm" action="/new" method="POST" novalidate>
 <h3>Username:<br>
-<input type="text" name="name" ng-model="user" required>
+<input type="text" name="user" ng-model="user" required>
 <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
 <span ng-show="myForm.user.$error.required">Username is required.</span>
 </span>
 </h3>
 
 <h3>Password:<br>
-        <input type="password" name="pwd" ng-minlength="8" ng-maxlength="20" required ng-model="password">
+        <input type="password" name="password" ng-minlength="8" ng-maxlength="20" required ng-model="password">
         <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
           <span ng-show="myForm.password.$error.required">This field is required</span>
           <span ng-show="myForm.password.$error.minlength">This field is too short</span>
@@ -55,7 +58,7 @@ h3{
 </h3>
 
 <h3>Contact No:<br>
-<input type="number" ng-minlength="10" ng-maxlength="10" name="contact" ng-model="phone" required>
+<input type="number" ng-minlength="10" ng-maxlength="10" name="phone" ng-model="phone" required>
 <span style="color:red" ng-show="myForm.phone.$dirty && myForm.phone.$invalid">
 <span ng-show="myForm.phone.$error.required">phone number is required.</span>
 <span ng-show="(myForm.phone.$error.minlength || myForm.phone.$error.maxlength) "> phone number should be 10 digits </span>
