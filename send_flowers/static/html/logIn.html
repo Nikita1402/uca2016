@@ -1,83 +1,44 @@
-<DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=devic-width, initial-scale=1">
-     <title>FLOWER</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     <style>
-body {
-    background-image: url("./images/loginbackground.jpg");
-    color:silver;
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+    $scope.email = '';
+    $scope.password = '';
+  
+});
+</script> 
+<style>
+h3{
+  color:red;
 }
 </style>
-</head>
+</head> 
+<body background="./images/loginbackground.jpg" opacity=0.2>
+<div align="center">
+<form ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
+<h2 style="color:red"><u>LOGIN</u></h2>
+<h3>Email:<br>
+<input type="email" name="email" ng-model="email" required>
+    <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+          <span ng-show="myForm.email.$error.required">This field is required</span>
+      </span>
+</h3>
 
-<body>
-	<div class="container-fluid">
-	    <div class="row" style="padding:0";>
-	      <div class="col-md-4">	
-	      </div>
-	      <div class="col-md-4" style="size:100";>	
-		    <img class="img-responsive" width="5000000" height="5000000" src="./images/loginimage.jpg">
-	      </div>
-           <ul class="col-md-4 nav nav-pills ">
-          <li class="active"><a data-toggle="pill" href="#signin">Sign In</a></li>
-         <li><a data-toggle="pill" href="#signup">Sign Up</a></li>
-         </ul><br>
-	<div class="tab-content">
-    <div id="signin" class="tab-pane fade in active">
-          <form >
-                <div class="form-group">
-                  </br>
-                  </br>
-                <label  for="email">Email:     </label>
-                 <input type="email" width="100" height="100"  maxlength="10"  id="email" placeholder="Enter email">
-             </div>
-              </br>
-                 <div>
-                 <label for="pwd">Password:</label>
-      <input type="password" id="pwd" placeholder="Enter password"></br></br>
-      <span class="label label-warning">Forget Password</span>
-      </div></br>
-            <div class="checkbox">
-            <label><input type="checkbox"> Remember me</label>
-           </div>
-                  </br>
-           <button type="submit" class="btn btn-default">Submit</button>
-       </form>
-    </div>
-    <div id="signup" class="tab-pane fade ">
-              <form >
-                <div class="form-group">
-                  </br>
-                    </br>
-                <label  for="email">Email:</label>
-                 <input type="email"  width="100" height="100"  maxlength="10"  id="email" placeholder="Enter email">
-             <div></br>
-              <select name="flower" align="right" style="color:red">
-         <option value="buyer">buyer</option>
-         <option value="seller">Seller</option>
-          </select>
-          </div></br>
-                 <div>
-                 <label for="pwd">Password:</label>
-      <input type="password" id="pwd" placeholder="Enter password">
-      </div><br>
-      <div>
-                 <label for="pwd">Confirm Password:</label>
-      <input type="password" id="pwd" placeholder="Confirm password">
-      </div><br>
-            
-           <button type="submit" class="btn btn-default">Submit</button>
-         </div>
-       </form>
-    </div>
-  </div>
+<h3>Password:<br>
+        <input type="password" name="pwd" required ng-model="password">
+        <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+          <span ng-show="myForm.password.$error.required">This field is required</span>
+      </span>
+</h3>
+<h3>
+<input type="submit"
+ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||  
+myForm.email.$dirty && myForm.email.$invalid">
+</h3>
+</form>
 </div>
 </body>
 </html>
