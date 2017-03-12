@@ -5,11 +5,11 @@
 <script>
 var app = angular.module('myApp', []);
 app.controller('validateCtrl', function($scope) {
-    $scope.user = '';
-    $scope.address = '';
-    $scope.phone = '';
+    $scope.name = '';
     $scope.email = '';
-    $scope.password = '';
+    $scope.pwd = '';
+    $scope.address = '';
+    $scope.contact = '';
 });
 </script>
 <style>
@@ -27,19 +27,10 @@ opacity: 0.2;
 <div align="center">
 <form ng-app="myApp" ng-controller="validateCtrl" name="myForm" action="/new" method="POST" novalidate>
 <h3>Username:<br>
-<input type="text" name="user" ng-model="user" required>
-<span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
-<span ng-show="myForm.user.$error.required">Username is required.</span>
+<input type="text" name="name" ng-model="name" required>
+<span style="color:red" ng-show="myForm.name.$dirty && myForm.name.$invalid">
+<span ng-show="myForm.name.$error.required">Username is required.</span>
 </span>
-</h3>
-
-<h3>Password:<br>
-        <input type="password" name="password" ng-minlength="8" ng-maxlength="20" required ng-model="password">
-        <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
-          <span ng-show="myForm.password.$error.required">This field is required</span>
-          <span ng-show="myForm.password.$error.minlength">This field is too short</span>
-          <span ng-show="myForm.password.$error.maxlength">This field is too long</span>
-      </span>
 </h3>
 
 <h3>Email:<br>
@@ -50,6 +41,15 @@ opacity: 0.2;
 </span>
 </h3>
 
+<h3>Password:<br>
+        <input type="password" name="pwd" ng-minlength="8" ng-maxlength="20" required ng-model="pwd">
+        <span style="color:red" ng-show="myForm.pwd.$dirty && myForm.pwd.$invalid">
+          <span ng-show="myForm.pwd.$error.required">This field is required</span>
+          <span ng-show="myForm.pwd.$error.minlength">This field is too short</span>
+          <span ng-show="myForm.pwd.$error.maxlength">This field is too long</span>
+      </span>
+</h3>
+
 <h3>Address:<br>
 <input type="text" name="address" ng-model="address" required>
 <span style="color:red" ng-show="myForm.address.$dirty && myForm.address.$invalid">
@@ -58,10 +58,10 @@ opacity: 0.2;
 </h3>
 
 <h3>Contact No:<br>
-<input type="number" ng-minlength="10" ng-maxlength="10" name="phone" ng-model="phone" required>
-<span style="color:red" ng-show="myForm.phone.$dirty && myForm.phone.$invalid">
-<span ng-show="myForm.phone.$error.required">phone number is required.</span>
-<span ng-show="(myForm.phone.$error.minlength || myForm.phone.$error.maxlength) "> phone number should be 10 digits </span>
+<input type="number" ng-minlength="10" ng-maxlength="10" name="contact" ng-model="contact" required>
+<span style="color:red" ng-show="myForm.contact.$dirty && myForm.contact.$invalid">
+<span ng-show="myForm.contact.$error.required">phone number is required.</span>
+<span ng-show="(myForm.contact.$error.minlength || myForm.contact.$error.maxlength) "> phone number should be 10 digits </span>
 </span>
 </h3>
 
